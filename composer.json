@@ -1,0 +1,26 @@
+{
+    "name": "phly/bookdown2mkdocs",
+    "description": "Tool for converting bookdown.json to mkdocs.yml for publishing bookdown docs to rtfd.org",
+    "keywords": ["bookdown", "mkdocs", "documentation"],
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Matthew Weier O'Phinney",
+            "homepage": "https://mwop.net/"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "symfony/yaml": "^2.7",
+        "zfcampus/zf-console": "^1.2",
+        "zendframework/zend-filter": "^2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Phly\\Bookdown2Mkdocs\\": "src/"
+        }
+    },
+    "bin": [
+        "bin/bookdown2mkdocs.php"
+    ]
+}
