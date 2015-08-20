@@ -6,6 +6,8 @@
 
 namespace Phly\Bookdown2Mkdocs;
 
+use Zend\Console\ColorInterface as Color;
+
 class Command
 {
     public function __invoke($route, $console)
@@ -29,7 +31,8 @@ class Command
             $defaults
         );
 
-        $console->writeLine($yaml);
+        file_put_contents('./mkdocs.yml', $yaml);
+        $console->writeLine('Wrote contents to mkdocs.yml', Color::GREEN);
         return 0;
     }
 }

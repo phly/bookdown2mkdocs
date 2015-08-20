@@ -13,7 +13,7 @@ return [
     [
         'name'                 => 'convert',
         'route'                => '[<bookdown-path>] --site-name= --repo-url= --copyright-url= --copyright-author= [--mkdocs=]',
-        'description'          => 'Convert a bookdown.json file to mkdocs.yml, typically to allow documentation integration via rtfd.org. The command will return the YAML via stdout',
+        'description'          => 'Convert a bookdown.json file to mkdocs.yml, typically to allow documentation integration via rtfd.org. The command will write to the mkdocs.yml file in the current directory',
         'short_description'    => 'Convert a bookdown.json file to mkdocs.yml.',
         'options_descriptions' => [
             '[<bookdown-path>]'   => 'Path to bookdown.json; if not present, assumes doc/bookdown.json',
