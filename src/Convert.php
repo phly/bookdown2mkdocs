@@ -13,9 +13,6 @@ class Convert
     private $copyrightTemplate = 'Copyright (c) %s <a href="%s">%s</a>';
 
     private $mkdocsDefaults = [
-        'markdown_extensions' => [
-            'py-gfm',
-        ],
         'docs_dir' => 'doc/book',
         'site_dir' => 'doc/html',
         'pages' => [
